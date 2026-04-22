@@ -72,7 +72,7 @@ function openModal(sectorId) {
     document.getElementById('modalTitle').style.color = data.color;
     document.getElementById('modalBody').textContent = data.body;
 
-    audioElement.src = `audios/sector${sectorId}.ogg`; 
+    audioElement.src = `/audios/sector${sectorId}.ogg`; 
     audioElement.load(); 
 
     const tagsEl = document.getElementById('modalTags');
