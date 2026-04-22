@@ -106,18 +106,23 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ── Animación de aparición de cards al hacer scroll ──
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animationPlayState = 'running';
-        }
-    });
-}, { threshold: 0.1 });
+// En mobile las cards aparecen directo sin necesidad de scroll/pausa
+const isMobile = window.matchMedia('(hover: none)').matches || window.innerWidth <= 780;
 
-document.querySelectorAll('.sector-card').forEach(card => {
-    card.style.animationPlayState = 'paused';
-    observer.observe(card);
-});
+if (!isMobile) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.sector-card').forEach(card => {
+        card.style.animationPlayState = 'paused';
+        observer.observe(card);
+    });
+}
 
 // ── Efecto de cursor personalizado en cards ──
 document.querySelectorAll('.sector-card').forEach(card => {
