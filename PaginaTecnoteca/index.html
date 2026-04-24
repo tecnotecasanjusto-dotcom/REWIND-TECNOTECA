@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoteca · Rewind 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Unbounded:wght@300;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-logos">
+            <div class="logo-tecnoteca">
+                <img src="images/LOGO TECNOTECA.png" alt="Tecnoteca Logo" class="logo-img">
+                <div class="logo-labels">
+                    <img src="images/Museo.png" alt="Museo" class="logo-img">
+                    <img src="images/Rigran.png" alt="Rigran" class="logo-img">
+                    <img src="images/LogoBlanco.PNG" alt="Gobierno" class="logo-img">
+                    <img src="images/logocyber.png" alt="Cyberbuy" class="logo-img">
+                </div>
+            </div>
+            <div class="header-badges">
+                <div class="badge badge-sf">
+                    <span class="badge-icon">
+                        <image src="images/StaFe.svg" alt="Provincia de Santa Fe" style="height:20px;">
+                    </span>
+                    <div>
+                        <div class="badge-title">SANTA FE</div>
+                    </div>
+                </div>
+                <div class="badge badge-rc">
+                    <span class="badge-icon">
+                        <image src="images/LogoBlanco.PNG" alt="Región Centro" style="height:20px;">
+                    </span>
+                    <div>
+                        <div class="badge-title">SAN JUSTO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="rewind-tag">2026</div>
+            <h1 class="main-title">Rewind</h1>
+            <p class="main-subtitle">Recorrido Histórico Tecnológico</p>
+            <p class="main-desc">
+                Un viaje por los hitos de la tecnología que marcaron nuestra historia,
+                desde los primeros inventos hasta la era digital.
+            </p>
+        </div>
+
+        <div class="header-decoration">
+            <div class="deco-square sq1"></div>
+            <div class="deco-square sq2"></div>
+            <div class="deco-square sq3"></div>
+            <div class="deco-square sq4"></div>
+        </div>
+    </header>
+
+    <!-- SECTORES INTRO -->
+    <section class="sectors-intro">
+        <div class="intro-line">
+            <span class="intro-label">Sectores y Guía</span>
+            <div class="intro-line-bar"></div>
+            <span class="intro-count">08 Sectores</span>
+        </div>
+    </section>
+
+    <!-- SECTORES GRID -->
+    <main class="sectors-grid">
+
+        <article class="sector-card" data-sector="1" style="--accent: var(--color-cyan);">
+            <div class="card-number">SEC <span>01</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">Escribe tu historia</h2>
+                <p class="card-desc">De la rueda a la imprenta los primeros inventos que cambiaron la civilización humana para siempre.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 1.png" alt="Escribir" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(1)">Escuchar</button>
+        </article>
+
+        <article class="sector-card" data-sector="2" style="--accent: var(--color-lime);">
+            <div class="card-number">SEC <span>02</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">En la imagen</h2>
+                <p class="card-desc">¿Te acordás de esperar a que la tele "calentara" para ver tu programa favorito? En este sector, exploramos la evolución de lo que vemos y cómo lo vemos.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 2.png" alt="Imagen" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(2)">Escuchar</button>
+        </article>
+
+        <article class="sector-card" data-sector="3" style="--accent: var(--color-orange);">
+            <div class="card-number">SEC <span>03</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">Capturando realidad</h2>
+                <p class="card-desc">Antes de las ráfagas infinitas en el celular, cada disparo era una decisión, un destello y una historia guardada para siempre.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 3.png" alt="Capturar" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(3)">Escuchar</button>
+        </article>
+
+        <article class="sector-card" data-sector="4" style="--accent: var(--color-yellow);">
+            <div class="card-number">SEC <span>04</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">Arte de vivir escuchando</h2>
+                <p class="card-desc">Te acordás de la emoción de esperar tu canción favorita en la radio para apretar Rec? En este sector celebramos la música que se podía tocar.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 4.png" alt="Escuchar" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(4)">Escuchar</button>
+        </article>
+
+        <article class="sector-card" data-sector="5" style="--accent: var(--color-red);">
+            <div class="card-number">SEC <span>05</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">Educación y Trabajo</h2>
+                <p class="card-desc">Vení a descubrir la evolución de las herramientas que impulsaron la formación técnica y el desarrollo independiente.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 5.png" alt="Educación" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(5)">Escuchar</button>
+        </article>
+
+        <article class="sector-card" data-sector="6" style="--accent: var(--color-navy);">
+            <div class="card-number">SEC <span>06</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">Comunicación Instantánea</h2>
+                <p class="card-desc">Antes de los mensajes de texto y las videollamadas, la inmediatez tenía este sonido y este tacto.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 6.png" alt="Comunicación" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(6)">Escuchar</button>
+        </article>
+
+        <article class="sector-card" data-sector="7" style="--accent: var(--color-pink);">
+            <div class="card-number">SEC <span>07</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">Los sonoros como vida</h2>
+                <p class="card-desc">Hubo un tiempo en que escuchar música era un evento elegir el disco, limpiar la púa y esperar ese sutil "crack" antes de que la melodía invadiera el ambiente.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 7.png" alt="Internet" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(7)">Escuchar</button>
+        </article>
+
+        <article class="sector-card" data-sector="8" style="--accent: var(--color-green);">
+            <div class="card-number">SEC <span>08</span></div>
+            <div class="card-accent-bar"></div>
+            <div class="card-body">
+                <h2 class="card-title">Revelar un norte</h2>
+                <p class="card-desc">Una mirada al pasado para entender hacia dónde vamos, manteniendo siempre vivo nuestro origen.</p>
+            </div>
+            <div class="card-icon">
+                <image src="images/SEC 8.png" alt="Futuro" style="height:40px;">
+            </div>
+            <button class="card-btn" onclick="openModal(8)">Escuchar</button>
+        </article>
+
+    </main>
+
+    <!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div class="modal-number" id="modalNumber"></div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        
+        <p class="modal-body" id="modalBody"></p>
+
+        <div class="modal-audio-container" style="margin: 20px 0;">
+            <audio id="modalAudio" controls style="width: 100%; height: 35px;">
+                <source src="" type="audio/ogg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
+
+        <div class="modal-tags" id="modalTags"></div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="images/LOGO TECNOTECA.png" alt="Tecnoteca" style="height:50px;">
+            </div>
+            <div class="footer-text">
+                <p><strong>Tecnoteca · Rewind 2026</strong></p>
+                <p>Recorrido Histórico Tecnológico — San Justo StaFe</p>
+            </div>
+            <div class="footer-sectors">
+                <span>8 Sectores</span>
+                <span>·</span>
+                <span>Guía incluida</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
