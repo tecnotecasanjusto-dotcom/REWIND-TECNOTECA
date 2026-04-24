@@ -639,6 +639,45 @@ img { max-width: 100%; height: auto; display: block; }
     .modal-box { padding: 32px 24px; }
 }
 
+/* ── AUDIO PRESENTACIÓN ── */
+.present-audio-block {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+    animation: fadeInDown 0.6s 0.4s ease both;
+}
+
+.present-label {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    opacity: 0.7;
+}
+
+.present-btn {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-cyan);
+    background: transparent;
+    border: 1px solid var(--color-cyan);
+    padding: 7px 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background var(--transition), color var(--transition);
+}
+
+.present-btn:hover {
+    background: var(--color-cyan);
+    color: var(--bg-dark);
+}
+
 /* ── MOBILE: sin animaciones hover en los sectores ── */
 @media (hover: none), (max-width: 780px) {
 

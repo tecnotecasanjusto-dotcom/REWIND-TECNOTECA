@@ -135,5 +135,18 @@ document.querySelectorAll('.sector-card').forEach(card => {
     });
 });
 
+// ── Audio Presentación ──
+function togglePresent(btn) {
+    const audio = document.getElementById('audioPresent');
+    if (audio.paused) {
+        audio.play();
+        btn.textContent = '⏸ Pausar';
+    } else {
+        audio.pause();
+        btn.textContent = '▶ Reproducir';
+    }
+    audio.onended = () => { btn.textContent = '▶ Reproducir'; };
+}
+
 console.log('%cTecnoteca · Rewind 2026', 'color: #3DD6DC; font-family: monospace; font-size: 14px; font-weight: bold;');
 console.log('%c8 Sectores · Recorrido Histórico Tecnológico', 'color: #A8E63C; font-family: monospace;');
